@@ -1,0 +1,37 @@
+{
+    "name": "auditsh/client-php-laravel",
+    "description": "Laravel Client for Sending data from your application to the audit.sh Service",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^7.0",
+        "ramsey/uuid": "^3.0",
+        "paragonie/random_compat": "~2.0",
+        "paragonie/easyrsa": "^0.5.2"
+    },
+    "require-dev": {
+        "ext-json": "^7.2",
+        "ext-curl": "^7.2",
+        "php": "^7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Bennett",
+            "email": "simon@audit.sh"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AuditSh\\ClientPHPLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AuditSh\\ClientPHPLaravel\\AuditShLaravelServiceProvider"
+            ]
+        }
+    }
+}
